@@ -1,0 +1,21 @@
+/* Layout for the entire page */
+.layout {
+    display: flex;
+    height: 100vh;
+}
+/* Main content container */
+.content {
+    width: 100%; /* Take up the rest of the page width */
+    padding: 40px;
+    height: 100vh; /* Full height to make it scrollable */
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 50px; /* Add spacing between sections */
+    margin-top: -20px;
+   
+}
+
+/* Style individual sections */
+

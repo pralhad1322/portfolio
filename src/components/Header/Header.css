@@ -1,0 +1,114 @@
+/* Overall header container */
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #101417;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Top section layout */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left side: Name and Email */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logo and username */
+}
+
+.header-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gmail {
+    font-size: 12px;
+    display: block;
+}
+
+/* Center section: Navigation menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0;
+    gap: 20px; /* Space between each menu item */
+    font-size: 16px;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: color 0.3s, border-bottom 0.3s; /* Smooth hover effects */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent; /* Default border */
+}
+
+.nav-menu li:hover {
+    color: purple;
+    border-bottom: 2px solid purple; /* Add purple underline */
+}
+
+/* Right side: Theme and Settings */
+.nav-bottom {
+    list-style: none;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between each menu item */
+    font-size: 16px;
+    padding: 0;
+}
+
+.nav-bottom li {
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: color 0.3s, border-bottom 0.3s; /* Smooth hover effects */
+}
+
+.nav-bottom li:hover {
+    color: purple;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .username {
+        font-size: 16px;
+    }
+
+    .header-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

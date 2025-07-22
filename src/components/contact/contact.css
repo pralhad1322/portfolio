@@ -1,0 +1,136 @@
+/* Contact Page Layout */
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    background-color: #101417;
+    border-radius: 10px;
+  }
+  
+  /* Contact Form Styling */
+  .contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #101417;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #101417;
+  }
+  
+  .select-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    
+  }
+  
+  .select-group select {
+    padding: 10px 39%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #101417;
+    color: white;
+    text-align: right;
+   
+    
+  }
+  
+  textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    background-color: #101417;
+    
+  }
+  
+  button[type="submit"] {
+    padding: 12px;
+    color: white;
+    background-color: #5a67d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #4c51bf;
+  }.contact-info {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #101417;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    
+  }
+  
+  .contact-info div {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+  }
+  
+  .contact-icon {
+    font-size: 20px;
+    color:white;
+    background-color:rgb(15, 158, 158);
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .contact-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 20px;
+    font-weight: normal;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 10px;
+    margin-left: 34px; /* Align with text below icon and label */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .contact-page {
+      flex-direction: column;
+    }
+  
+    .contact-form, .contact-info {
+      width: 100%;
+    }
+  }
+  
